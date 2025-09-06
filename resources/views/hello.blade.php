@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Page in Laravel</title>
+    <title>View</title>
 </head>
 <body>
-    <h1>Our First Page</h1>
+    <h2>This is hello file </h2>
 </body>
 </html>
