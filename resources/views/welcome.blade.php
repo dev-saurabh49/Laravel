@@ -9,5 +9,8 @@
 <body>
     <h1>Our First Page</h1>
     <a href="/post">Post Page</a>
+
+    {{-- <a href="/about">about us page</a> --}}
+    <a href="{{ route('about') }}">about us page</a>
 </body>
 </html>

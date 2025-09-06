@@ -10,5 +10,9 @@
     <h1 style="color:lightseagreen;">This is post</h1>
 
     <a href="post/first_post">First Post</a>
+
+    <a href="/post">Post Page</a>
+
+    <a href="/about">about us page</a>
 </body>
 </html>
