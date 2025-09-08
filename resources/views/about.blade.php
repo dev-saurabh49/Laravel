@@ -39,6 +39,8 @@
 
     <a href={{'post'}}>Post Page</a>
 
-    <a href="{{ route('about') }}">about us page</a>
+    <h3>Test Route Redirected</h3>
+
+    {{-- <a href="{{ route('about') }}">about us page</a> --}}
 </body>
 </html>

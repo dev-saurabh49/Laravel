@@ -2,25 +2,22 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/post',function(){
-    return view('post');
-});
+// Route::get('/post',function(){
+//     return view('post');
+// });
 
-Route::get('/hello',function(){
-    return view('hello');
-});
+// Route::get('/hello',function(){
+//     return view('hello');
+// });
 
-Route::get('/aboutss',function(){
-    return view('about');
-})->name('about');
+// Route::get('/aboutss',function(){
+//     return view('about');
+// })->name('about');
 
-Route::get('/post/first_post',function(){
-    return view('first_post');
-})->name('post');
+// Route::get('/post/first_post',function(){
+//     return view('first_post');
+// })->name('post');
 // Route::get('/post/{id?}/comment/{commentid?}',function(string $id = null, string $comment=null){
 //     if($id)
 //     {
@@ -67,3 +64,13 @@ Route::get('/post/first_post',function(){
 // Route::get('/hello',function(){
 //     return view('post');
 // });
+
+Route::get('/', function () {
+    return view('welcome');
+})->name('home');
+
+Route::get('/test',function(){
+    return view('about');
+});
+
+Route::redirect('/about','/test', 301); //permanent
