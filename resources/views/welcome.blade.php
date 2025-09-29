@@ -8,9 +8,33 @@
 </head>
 <body>
     <h1>Our First Page</h1>
-    <a href="/post">Post Page</a>
+    {{ 7+3}}
+    <br />
+    <br />
 
-    {{-- <a href="/about">about us page</a> --}}
-    {{-- <a href="{{ route('about') }}">about us page</a> --}}
+    {{"Hello World"}} <br />
+    {!!"<h1>Hello World</h1>"!!}
+
+    {{-- {!!"<script>alert('Hello World')</script>"!!} --}}
+
+    @php 
+        $user = "Yahoo Baba";
+        $names = ["Salman khan","Saurabh Pandey","Shreyash Srivastava","Avinash Sharma"];
+        
+    @endphp
+    <ul> 
+    @foreach ($names as  $name)
+    @if ($loop->first)
+        <li style="color:red">  {{$name}}</li>
+    @else
+        <li>  - {{$name}}</li>    
+    @endif
+        <li> - {{$name}}</li>
+    @endforeach
+    </ul>
+
+
+
+    {{ $user }}
 </body>
 </html>

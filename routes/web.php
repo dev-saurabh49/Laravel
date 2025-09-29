@@ -65,12 +65,24 @@ use Illuminate\Support\Facades\Route;
 //     return view('post');
 // });
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+// Route::get('/', function () {
+//     return view('welcome');
+// })->name('home');
 
-Route::get('/test',function(){
-    return view('about');
+// Route::get('/test',function(){
+//     return view('about');
+// });
+
+// Route::redirect('/about','/test', 301); //permanent
+
+
+Route::get("/",function(){
+    return view('templte');
 });
 
-Route::redirect('/about','/test', 301); //permanent
+Route::get("/about",function(){
+    return view('Template_about');
+});
+Route::get("/contact",function(){
+    return view('Template_contact');
+});
